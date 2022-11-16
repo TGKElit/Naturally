@@ -1,0 +1,30 @@
+.products{
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+
+
+}
+
+.product{
+    
+   
+    width: 358px;
+
+
+}
+
+
+.product-image{
+
+    object-fit: cover;
+    max-width: 100%
+    
+}
+
+.product-name{
+    margin-left: auto;
+    margin-right: auto;
+
+}

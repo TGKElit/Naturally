@@ -1,30 +1,131 @@
+@keyframes product-hover {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    
+  }
+
+
+
+
 .products{
 
     display: flex;
     flex-flow: column;
     gap: 10px;
-
+    margin:auto;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .product{
     
    
-    width: 358px;
+    width: 362px;
+    height: 486px;
+        /* Image Height 446. Amount left for text to be set later */
+
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 
 
 }
+
+
 
 
 .product-image{
 
     object-fit: cover;
-    max-width: 100%
+    max-width: 100%;
+    margin: 0 0;
     
 }
 
 .product-name{
-    margin-left: auto;
-    margin-right: auto;
+
+    height: 20px;
 
 }
+.product-image-container{
+    height: 466px;
+    overflow: hidden;
+}
+
+.product-description{
+        margin: 0 0;
+        transition: transform 2s ease-in-out;
+        background-color: #D9D9D9;
+        height: 200px; /*Only shows top 192px but a bit of margin for possible errors from varying browser line height etc*/
+        opacity: 70%;
+        display: flex;
+        justify-content:space-between;
+        overflow-x: hidden;
+
+        /* position:absolute;
+        top: 416px; */
+}
+
+.product-description-columns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right:   50px;
+    justify-content: space-between;
+}
+
+.align-right{
+    text-align: right;
+
+}
+
+
+.product-description-text{
+    width: 200px;
+
+}
+
+.product-description-button{
+
+    background-color: #BABABA;
+
+}
+
+
+
+
+
+@media screen and (min-width: 750px) {
+    .products{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;    
+    }
+
+    .product{
+        width: 650px;
+        height: 852px; 
+        /* Image Height 800. Amount left for text to be set later */
+    }
+
+
+
+
+    .product-image-container{
+        height: 800px;
+        width: 650px;
+
+    }
+
+    .product:hover .product-description{
+
+    
+    transform:translateY(-198px); /*Line height below image. So show a bit more than the 192 pixels */
+
+    }
+
+
+  }

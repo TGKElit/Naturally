@@ -1,12 +1,3 @@
-@keyframes product-hover {
-    from {background-color: red;}
-    to {background-color: yellow;}
-    
-  }
-
-
-
-
 .products{
 
     display: flex;
@@ -64,9 +55,6 @@
         display: flex;
         justify-content:space-between;
         overflow-x: hidden;
-
-        /* position:absolute;
-        top: 416px; */
 }
 
 .product-description-columns{

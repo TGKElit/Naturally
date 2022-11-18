@@ -1,0 +1,49 @@
+
+@keyframes blobSlideIn {
+    from {left: -547px}
+    to {
+        left: 0px;
+
+    }
+  }
+
+
+.blob-svg{
+    width: 436px;
+    height: 761px;
+    
+   
+    position:relative;
+    transition: transform 2s ease-in 2s;
+    z-index: 200;
+    
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+
+
+
+    .blob-svg{
+
+        width: 547px;
+        height: 946px; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
+        position: fixed;
+        top:0px;
+        left: -547px;
+
+        
+
+        animation-name: blobSlideIn;
+        animation-duration: 4s;
+        animation-delay: 2s; /* Perhaps this would be better triggered by Javascript? Perhaps from scroll position? Will be made to do animation in reverse when X is clicked.*/ 
+        animation-fill-mode: forwards;
+        
+        
+    }
+
+
+   
+}

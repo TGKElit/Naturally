@@ -1,8 +1,8 @@
 .header-section {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 100vw;
-    top: 0;
+    top: -36px;
     left: 0;
     flex-direction: column;
     z-index: 100;
@@ -63,6 +63,10 @@ nav {
 }
 
 @media screen and (min-width: 390px) {
+    .header-section {
+        top: -170px;
+    }
+
     .banner {
         justify-content: end;
     }

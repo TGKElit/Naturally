@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     flex-direction: column;
-    
+    z-index: 100;
 }
 
 .banner {
@@ -50,7 +50,7 @@ nav {
     justify-content: space-between;
 }
 
-a {
+.header-section a {
     all: unset;
 }
 
@@ -58,7 +58,7 @@ a {
     display: none;
 }
 
-button {
+.menu button {
     all: unset;
 }
 
@@ -102,7 +102,7 @@ button {
         display: unset;
     }
 
-    button {
+    .menu button {
         display: none;
     }
 }

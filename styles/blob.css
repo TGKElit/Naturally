@@ -28,11 +28,11 @@
 
     .blob-svg{
 
-        width: 547px;
-        height: 946px; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
+        width: 49vh;
+        height: 87vh; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
         position: fixed;
-        top:0px;
-        left: -547px;
+        top:98px;
+        left: -52VH;
 
         
 

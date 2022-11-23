@@ -1,0 +1,13 @@
+.stories {
+    display: flex;
+    height: 440px;
+    max-width: 100%;
+}
+
+.story {
+    width: 169px;
+}
+
+img {
+    width: 100%;
+}

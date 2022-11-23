@@ -3,10 +3,17 @@
     position: sticky;
     width: 100vw;
     max-width: 100%;
-    top: -36px;
+    top: -102px;
     left: 0;
     flex-direction: column;
     z-index: 100;
+    transition: top 0.2s ease-in-out;
+}
+
+.scroll-up {
+    position: sticky;
+    top: -36px;
+    transition: top 0.2s ease-in-out;
 }
 
 .banner {
@@ -19,8 +26,6 @@
     align-items: center;
     
 }
-
-
 
 header {
     display: flex;
@@ -66,7 +71,12 @@ nav {
 }
 
 @media screen and (min-width: 390px) {
+
     .header-section {
+        top: -300px;
+    }
+
+    .scroll-up {
         top: -170px;
     }
 

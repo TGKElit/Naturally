@@ -2,12 +2,65 @@
     display: flex;
     height: 440px;
     max-width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
 }
 
 .story {
-    width: 169px;
+    min-width: 169px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
 }
 
-img {
+.story img {
     width: 100%;
+}
+
+.story article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 153px;
+    background-color: #BABABA;
+}
+
+.story article p {
+    width: 100%;
+    white-space: normal;
+    margin: 0;
+}
+
+.story button {
+    all: unset;
+    width: 132px;
+    min-height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px auto;
+}
+
+.story button p {
+    text-align: center;
+}
+
+@media screen and (min-width: 390px) {
+    .stories {
+        height: 684px;
+    }
+
+    .story {
+        min-width: 370px;
+        margin-left: 84px;
+    }
+
+    .story button {
+        min-height: 45px;
+        min-width: 150px;
+        margin-right: 24px;
+    }
 }

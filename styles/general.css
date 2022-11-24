@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --banner-color: #f3eddf;
+    --header-color: #fff;
+    --footer-color: #e4e4e4;
+    --background-color: #faf9fa;
+    --carousel-button-color: #f3f0e9;
+}
+
 body {
     margin: 0;
 }

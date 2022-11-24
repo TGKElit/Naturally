@@ -8,42 +8,75 @@
   }
 
 
+
+.blob-cross-button{
+
+    position: absolute;
+    top: 12vh;
+    left: 29vh;
+    visibility: hidden;
+
+
+
+}
 .blob-svg{
     width: 436px;
     height: 761px;
     
    
-    position:relative;
-    transition: transform 2s ease-in 2s;
-    z-index: 200;
+
+
     
 }
+
+.blob-container{
+    z-index: 99; /* Lower than header */
+    position:relative;
+    transition: transform 2s ease-in 2s;
+}
+
+
 
 
 
 
 @media screen and (min-width: 750px) {
 
-
-
-    .blob-svg{
-
-        width: 49vh;
-        height: 87vh; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
+    .blob-container{
         position: fixed;
         top:98px;
         left: -52VH;
-
+        z-index: 200; /* Higher than header */
         
 
         animation-name: blobSlideIn;
         animation-duration: 4s;
         animation-delay: 2s; /* Perhaps this would be better triggered by Javascript? Perhaps from scroll position? Will be made to do animation in reverse when X is clicked.*/ 
         animation-fill-mode: forwards;
+    }
+
+
+    .blob-svg{
+        
+
+        width: 49vh;
+        height: 87vh; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
+
         
         
     }
 
 
-   
+    .blob-cross-button{
+
+        visibility: visible;
+    }
+
+    .blob-invisible{
+        visibility: hidden;
+    }
+
+ 
+
+
 }

@@ -1,3 +1,5 @@
+
+//For Scroll
 window.onscroll = function(e) {
     
     if (this.oldScroll > this.scrollY) {
@@ -7,3 +9,20 @@ window.onscroll = function(e) {
     }
     this.oldScroll = this.scrollY;
 }
+
+
+
+//BLOB
+const blob = document.querySelector(".blob");
+const blobCross = document.querySelector(".blob-cross-button")
+console.log(blob);
+
+
+blobCross.addEventListener("click", ()=> {
+
+    blob.classList.add("blob-invisible");
+    blobCross.classList.add("blob-invisible");
+
+
+})
+

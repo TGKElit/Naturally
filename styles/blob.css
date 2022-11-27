@@ -19,9 +19,25 @@
 
 
 }
+
+
+.blob-heading{
+    position: absolute;
+    top: 19%;
+    left: 11%;
+
+}
+
+.blob-text{
+    position: absolute;
+    top: 33%;
+    left: 9.1%;
+    width: 66.7%;
+}
+
 .blob-svg{
-    width: 436px;
-    height: 761px;
+    width:100%;
+    /* height: 761px; */
     
    
 
@@ -33,16 +49,57 @@
     z-index: 99; /* Lower than header */
     position:relative;
     transition: transform 2s ease-in 2s;
+    left: 0px;
+}
+
+.blob-form{
+    width: 54.8%;
+    position:absolute;
+    top: 50%;
+    left: 9.1%;
+
+
+}
+
+/* Need relative units for distance */
+.blob-button{ 
+
+    margin-top: 29px;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    border: 0px;
+
+}
+.blob-input{
+    display:block;
+    border-radius: 25px;
+    height: 45px;
+    width: 100%;
+    max-width: 221px;
+ 
+
 }
 
 
+@media screen and (min-width: 436px) {
 
-
-
-
-@media screen and (min-width: 750px) {
+    .blob-svg{
+        width:436px;
+        
+       
+    
+    
+        
+    }
+    .blob-container{
+        max-width: 436px;
+    }
+}
+@media screen and (min-width: 768px) {
 
     .blob-container{
+        max-width: none;
         position: fixed;
         top:98px;
         left: -52VH;
@@ -60,11 +117,13 @@
         
 
         width: 49vh;
-        height: 87vh; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
+        height: 88vh; /* A bit more height than in figma, but it looks weird otherwise... Maybe shadows or something? */ 
 
         
         
     }
+
+    
 
 
     .blob-cross-button{
@@ -72,8 +131,21 @@
         visibility: visible;
     }
 
+
+    
+
+    .blob-button{
+        width: 36.53%
+
+    }
+
     .blob-invisible{
         visibility: hidden;
+    }
+
+    .blob-input{
+
+        max-width: none;
     }
 
  

@@ -1,0 +1,22 @@
+.info {
+    width: 100%;
+}
+
+.desktop-info {
+    display: none;
+}
+
+.phone-info {
+    margin: auto;
+}
+
+@media screen and (min-width: 750px) {
+    .desktop-info {
+        display: unset;
+        margin: auto;
+    }
+
+    .phone-info {
+        display: none;
+    }
+}

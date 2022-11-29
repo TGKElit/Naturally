@@ -4,6 +4,7 @@
     max-width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
+    padding-right: 24px;
 }
 
 .story {
@@ -22,8 +23,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 153px;
-    background-color: #BABABA;
+    height: 190px;
+    background-color: var(--background-color);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
 }
 
 .story article p {
@@ -36,12 +40,13 @@
     all: unset;
     width: 132px;
     min-height: 30px;
-    background-color: white;
+    background-color: var(--carousel-button-color);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 24px auto;
+    filter: drop-shadow(0 2px 2px rgb(0, 0, 0, 0.25));
 }
 
 .story button p {
@@ -51,10 +56,11 @@
 @media screen and (min-width: 750px) {
     .stories {
         height: 684px;
+        padding-right: 64px;
     }
 
     .story {
-        min-width: 370px;
+        min-width: 25vw;
         margin-left: 84px;
     }
 
@@ -62,5 +68,9 @@
         min-height: 45px;
         min-width: 150px;
         margin-right: 24px;
+    }
+
+    .story .article {
+        height: 221px;
     }
 }

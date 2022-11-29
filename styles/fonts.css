@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Unknow";
+    src: local("Unknow"),
+        url("../fonts/UnknowRegular-JRMLa.ttf")    format("truetype"),
+        url("../fonts/UnknowRegular-JRMLa.woff")    format("woff");
+
+}
+
+
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Variable"),
+        url("../fonts/Inter-Variable.ttf")    format("truetype");
+}
+
+/* @font-face {
+    font-family: "Inter";
+    src: local("Inter-Thin"),
+        url("../fonts/Inter-Thin.ttf")    format("truetype"),
+         
+        url("../fonts/Inter-Thin.woff")       format("woff");
+        font-weight: 200;
+  
+  ,
+         
+        url("../fonts/Inter-Variable.woff")       format("woff")
+} */

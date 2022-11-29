@@ -33,6 +33,11 @@
 .product-name{
 
     height: 20px;
+    
+    font-family: inter;
+    font-variation-settings: "wght" 400;
+    font-size: 20px;
+    line-height: 26px;
 
 }
 .product-image-container{
@@ -53,6 +58,11 @@
         position:absolute;
         top: 100%;
         width: 100%;
+
+        font-family: inter;
+        font-variation-settings: "wght" 400;
+        font-size: 24px;
+        line-height: 27px;
             
         
 }
@@ -90,6 +100,12 @@
 }
 .product-description-text{
     margin-top: 0px;
+
+    font-family: inter;
+    font-variation-settings: "wght" 400;
+    font-size: 16px;
+    line-height: 22px;
+        
 }
 
 
@@ -104,6 +120,13 @@
     max-width: 200px;
     height: 3vw;
     width: 12vw;
+
+
+    font-family: inter;
+    font-variation-settings: "wght" 400;
+    font-size: 16px;
+    line-height: 19.36px;
+        
 }
 
 

@@ -1,21 +1,45 @@
 .stories {
     display: flex;
-    height: 440px;
+    height: 120vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-container {
+    display: flex;
+    min-height: 110vw;
     max-width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
     padding-right: 24px;
 }
 
+.scroller {
+    width: 15vw;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.scroller-circle {
+    aspect-ratio : 1 / 1;
+    height: 100%;
+    background-color: #c4c4c4;
+    border-radius: 100%;
+}
+
 .story {
-    min-width: 169px;
+    min-width: 40vw;
+    min-height: 110vw;
     display: flex;
     flex-direction: column;
-    margin-left: 24px;
+    margin-left: 6vw;
 }
 
 .story img {
     width: 100%;
+    height: 60vw;
 }
 
 .story article {
@@ -23,7 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 190px;
+    height: 50vw;
     background-color: var(--background-color);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -38,14 +62,14 @@
 
 .story button {
     all: unset;
-    width: 132px;
-    min-height: 30px;
+    width: 47%;
+    height: 24%;
     background-color: var(--carousel-button-color);
-    border-radius: 30px;
+    border-radius: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 24px auto;
+    margin: 0 24px 24px auto;
     filter: drop-shadow(0 2px 2px rgb(0, 0, 0, 0.25));
 }
 
@@ -55,22 +79,37 @@
 
 @media screen and (min-width: 750px) {
     .stories {
-        height: 684px;
+        height: 54vw;
+    }
+
+    .story-container {
+        min-height: 47vw;
         padding-right: 64px;
     }
 
+    .scroller {
+        width: 8vw;
+        height: 2vw;
+    }
+
     .story {
+        min-height: 47vw;
         min-width: 25vw;
-        margin-left: 84px;
+        margin-left: 5vw;
+    }
+
+    .story img {
+        height: 32vw;
+    
     }
 
     .story button {
-        min-height: 45px;
-        min-width: 150px;
+        height: 23%;
+        width: 41%;
         margin-right: 24px;
     }
 
-    .story .article {
-        height: 221px;
+    .story article {
+        height: 15vw;
     }
 }

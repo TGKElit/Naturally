@@ -72,10 +72,6 @@ nav {
     line-height: 30px;
 }
 
-.links a:hover {
-    cursor: pointer;
-}
-
 .menu {
     display: flex;
     align-items: center;
@@ -85,6 +81,7 @@ nav {
 
 .header-section a {
     all: unset;
+    cursor: pointer;
 }
 
 .menu a:not(.persistent) {

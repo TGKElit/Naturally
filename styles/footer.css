@@ -2,13 +2,17 @@
 
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: grey;
+    justify-content: space-around;
 
 }
 
 .footer-column{
-
+    flex-grow: 1;
     display:flex;
     flex-direction: column;
+    width: 46%
 
 }
 
@@ -17,6 +21,7 @@
     font-variation-settings: "wght" 400;
     font-size: 16px;
     line-height: 20px;
+    border-bottom: 1px solid black;    
 }
 
 .footer-text{
@@ -25,5 +30,78 @@
     font-variation-settings: "wght" 300;
     font-size: 16px;
     line-height: 20px;
+
+}
+.footer-column:nth-child(1){
+    margin-left:4%;
+
+}
+.footer-column:nth-child(3){
+    margin-left:4%;
+
+}
+.footer-column:nth-child(2){
+    margin-right:4%;
+
+}
+.footer-column:nth-child(4){
+    margin-right:4%;
+
+}
+
+@media screen and (min-width: 750px) {
+
+    .footer-heading{
+        padding-left: 5%;
+
+    }
+
+    .footer-text{
+        padding-left: 5%
+    }
+
+
+    .footer-column:nth-child(1){
+        margin-left:0%;
+    
+    }
+    .footer-column:nth-child(3){
+        margin-left:0%;
+    
+    }
+    .footer-column:nth-child(2){
+        margin-right:0%;
+    
+    }
+    .footer-column:nth-child(4){
+        margin-right:0%;
+    
+    }
+
+
+    .footer-column{
+        width: 23%;
+        box-sizing: content-box;
+    }
+
+
+
+    .footer-heading{
+        font-family: inter;
+        font-variation-settings: "wght" 400;
+        font-size: 20px;
+        line-height: 24px;
+        border-bottom: 1px solid black;    
+    }
+
+
+    .footer-text{
+
+        font-family: inter;
+        font-variation-settings: "wght" 300;
+        font-size: 20px;
+        line-height: 24px;
+    
+    }
 
 }

@@ -58,6 +58,10 @@
     
 }
 
+.blob-svg path {
+    fill: var(--blob-color);
+}
+
 .blob-container{
     z-index: 99; /* Lower than header */
     position:relative;

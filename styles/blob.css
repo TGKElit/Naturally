@@ -132,7 +132,7 @@
         
 
         animation-name: blobSlideIn;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-delay: 2s; /* Perhaps this would be better triggered by Javascript? Perhaps from scroll position? Will be made to do animation in reverse when X is clicked.*/ 
         animation-fill-mode: forwards;
     }

@@ -17,6 +17,12 @@
 }
 
 .footer-heading{
+    margin-top: 25px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+
+
     font-family: inter;
     font-variation-settings: "wght" 400;
     font-size: 16px;
@@ -25,6 +31,8 @@
 }
 
 .footer-text{
+    margin-bottom: 16px;
+    margin-top: 0px;
 
     font-family: inter;
     font-variation-settings: "wght" 300;
@@ -49,7 +57,25 @@
 
 }
 
+.footer-svg{
+
+    margin-top: 0px;
+    margin-bottom: 4px;
+
+}
+
+
+
 @media screen and (min-width: 750px) {
+
+
+    .footer-svg{
+
+        margin-top: -8px;
+        margin-bottom: 24px;
+    
+    }
+    
 
     .footer-heading{
         padding-left: 5%;
@@ -87,6 +113,11 @@
 
 
     .footer-heading{
+        margin-top: 41px;
+        padding-bottom: 24px;
+        margin-bottom: 36px;
+
+
         font-family: inter;
         font-variation-settings: "wght" 400;
         font-size: 20px;
@@ -96,6 +127,7 @@
 
 
     .footer-text{
+
 
         font-family: inter;
         font-variation-settings: "wght" 300;

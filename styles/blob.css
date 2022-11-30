@@ -125,6 +125,7 @@
         top:98px;
         left: -52VH;
         z-index: 200; /* Higher than header */
+        opacity: 80%;
         
 
         animation-name: blobSlideIn;

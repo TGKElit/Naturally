@@ -72,6 +72,10 @@ nav {
     line-height: 30px;
 }
 
+.links a h2:hover {
+    color: brown;
+}
+
 .menu {
     display: flex;
     align-items: center;

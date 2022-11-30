@@ -3,6 +3,8 @@
     height: 120vw;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 100px;
 }
 
 .story-container {
@@ -102,6 +104,8 @@
 @media screen and (min-width: 750px) {
     .stories {
         height: 54vw;
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 
     .story-container {

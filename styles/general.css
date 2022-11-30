@@ -14,3 +14,10 @@
 body {
     margin: 0;
 }
+
+/* !important needed to override display:flex etc */
+.hidden{
+
+    display: none !important;
+
+}

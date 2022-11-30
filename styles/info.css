@@ -45,13 +45,14 @@
 
 @media screen and (min-width: 750px) {
     .info {
-        width: 1060px;
+        width: 70vw;
         height: 488px;
         margin-top: 85px;
         margin-bottom: 85px;
     }
     .desktop-info {
         display: unset;
+        width: 70vw;
     }
 
     .phone-info {
@@ -66,12 +67,11 @@
     }
 
     .info p {
-        width: 720px;
-        letter-spacing: 100%;
+        width: 48vw;
     }
 
     .info h2, .info p {
         top: 80px;
-        left: 128px;
+        left: 9vw;
     }
 }

@@ -16,7 +16,7 @@
     flex-direction: column;
     align-content: center;
 
-
+    margin-bottom: 60px;
 
 }
 
@@ -174,7 +174,7 @@
         max-width: 540px;
         max-height: 800px; 
         
-        
+        margin-bottom: 160px;
 
     }
 

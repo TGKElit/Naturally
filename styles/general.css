@@ -7,8 +7,10 @@
     --header-color: #fff;
     --footer-color: #e4e4e4;
     --background-color: #faf9fa;
-    --carousel-button-color: #f3f0e9;
-    --blob-color: #85a7ff;
+    --button-color: #f3f0e9;
+    --blob-color: #D36FC4;
+    --text-hover-color: #F8519E;
+    --button-hover-color: #EDAECB;
 }
 
 body {

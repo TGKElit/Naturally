@@ -91,7 +91,7 @@
     all: unset;
     min-width: 47%;
     min-height: 24%;
-    background-color: var(--carousel-button-color);
+    background-color: var(--button-color);
     border-radius: 8vw;
     display: flex;
     justify-content: center;

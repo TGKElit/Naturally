@@ -1,11 +1,51 @@
-.hero{
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
-    width: 100vw;
-    max-width: 100%;
+
+
+
+
+.hero{
+    overflow: visible;
+    width: 100%;
     position:relative;
 
 }
 
+
+.hero-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 0;
+
+
+
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+.hero-image-alternate{
+    position:absolute;
+    animation-delay: 3s;
+    top: 0px;
+}
 
 
 

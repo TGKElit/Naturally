@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./styles/footer.css">
 
     </head>
-    <body> <!--Under construction-->
+    <body>
         <section class="header-section" id="header-section">
             <section class="banner">
                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,22 +102,35 @@
                 </nav>
             </header>
         </section>
-    
+        
+       
+       
+        <!-- <picture class="hero-image">
+            
+            <source srcset = "images/cozy_filt_blocking_preview.jpg" media="(min-width: 100px">
 
-
+            
+             <source srcset="https://via.placeholder.com/1200" media="(min-width: 1200px)"/>
+            <source srcset="https://via.placeholder.com/800" media="(min-width: 800px)"/>
+            <source srcset="https://via.placeholder.com/600" media="(min-width: 600px)"/>
+            <img src="https://via.placeholder.com/400" alt="example"/> 
+          </picture>
+         -->
     
         <section class="hero">
-            <!--TODO Add actual video files of all formats. Remove eventual sound from videos. Get a good poster image. Make a poster image for mobile.-->
-                <video class="hero" autoplay="" id="heroVideo" loop="" muted="" poster="testImage.jpeg">
-                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-                  <source src="https://raw.githubusercontent.com/solodev/hero-with-video-bg/blob/master/videos/hero-video.webm" type="video/webm" />
-                  <source src="https://raw.githubusercontent.com/solodev/hero-with-video-bg/blob/master/videos/hero-video.ogv" type="video/ogv" />
-                </video>
-                <!-- <img alt="poster image mobile" class="poster img-fluid mx-auto d-block d-sm-none" src="https://raw.githubusercontent.com/solodev/hero-with-video-bg/master/images/hero-video-poster.jpg" /> -->
+            <picture >
+                <source srcset="images/stor_hero.png" media="(min-width: 750px)"/>
+                <img class="hero-image" src="images/mobil_hero.png" alt="A cool cloak">
+    
+            </picture> 
 
+            <picture >
+                <source srcset="images/stor_hero_inzoomad.png" media="(min-width: 750px)"/>
+                <img class="hero-image hero-image-alternate" src="images/mobil_hero_inzoomad.png" alt="A cool cloak">
+    
+            </picture> 
 
-
-                <input type="button" lang="se" class="hero-button" name="" id="" title="Läs mer!" value="LÄS MER"> <input type="button" lang="eng" class="hero-button" name="" id="" title="Read more!" value="READ MORE">
+            <input type="button" lang="se" class="hero-button" name="" id="" title="Läs mer!" value="LÄS MER"> <input type="button" lang="eng" class="hero-button" name="" id="" title="Read more!" value="READ MORE">
 
         </section>
 

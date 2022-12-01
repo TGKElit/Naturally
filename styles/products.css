@@ -145,7 +145,7 @@
 
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
 
 
 
@@ -190,8 +190,7 @@
 
     }
 
-    .product:hover 
-    .product-description{
+    .product:hover .product-description{
 
     
     transform:translateY(-100%);

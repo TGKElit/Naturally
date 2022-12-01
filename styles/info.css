@@ -43,7 +43,7 @@
     top: 120px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
     .info {
         width: 70vw;
         height: 488px;

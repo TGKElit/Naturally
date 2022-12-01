@@ -108,9 +108,15 @@ languageButton.addEventListener("click", (event) =>{
 const leftCircle = document.getElementById("left");
 const middleCircle = document.getElementById("middle");
 const rightCircle = document.getElementById("right");
+const storyContainer = document.getElementById("story-container");
+let containerWidth = storyContainer.scrollWidth - document.body.clientWidth;
 
-document.getElementById("story-container").onscroll = function(e) {
-    const scrollPercentage = (this.scrollLeft + document.body.scrollLeft) / (this.scrollWidth - document.body.clientWidth);
+window.onresize = function() {
+    containerWidth = storyContainer.scrollWidth - document.body.clientWidth;
+}
+
+storyContainer.onscroll = function(e) {
+    const scrollPercentage = (this.scrollLeft + document.body.scrollLeft) / containerWidth;
     console.log(scrollPercentage);
     switch (true) {
         
@@ -118,7 +124,11 @@ document.getElementById("story-container").onscroll = function(e) {
             leftCircle.classList.add("selected");
             rightCircle.classList.remove("selected");
             break;
-        
+
+        case scrollPercentage == 0.5:
+            leftCircle.classList.remove("selected");
+            rightCircle.classList.remove("selected");
+            break;
         case scrollPercentage > 0.5:
             leftCircle.classList.remove("selected");
             rightCircle.classList.add("selected");
@@ -126,3 +136,15 @@ document.getElementById("story-container").onscroll = function(e) {
         
     }
 }
+
+leftCircle.addEventListener("click", function() {
+    storyContainer.scrollTo(0,0);
+});
+
+middleCircle.addEventListener("click", function() {
+    storyContainer.scrollTo(containerWidth / 2, 0);
+})
+
+rightCircle.addEventListener("click", function() {
+    storyContainer.scrollTo(containerWidth, 0);
+})

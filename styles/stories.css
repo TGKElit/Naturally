@@ -14,6 +14,13 @@
     white-space: nowrap;
     overflow-x: scroll;
     padding-right: 24px;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.story-container::-webkit-scrollbar {
+    display: none;
 }
 
 .scroller {
@@ -21,7 +28,7 @@
     height: 3vw;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .scroller-circle {
@@ -37,6 +44,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 6vw;
+    margin-bottom: 12px;
 }
 
 .story img {

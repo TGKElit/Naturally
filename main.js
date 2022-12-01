@@ -104,5 +104,25 @@ languageButton.addEventListener("click", (event) =>{
 })
 
 
+//story scrollbar
+const leftCircle = document.getElementById("left");
+const middleCircle = document.getElementById("middle");
+const rightCircle = document.getElementById("right");
 
-
+document.getElementById("story-container").onscroll = function(e) {
+    const scrollPercentage = (this.scrollLeft + document.body.scrollLeft) / (this.scrollWidth - document.body.clientWidth);
+    console.log(scrollPercentage);
+    switch (true) {
+        
+        case scrollPercentage < 0.5:
+            leftCircle.classList.add("selected");
+            rightCircle.classList.remove("selected");
+            break;
+        
+        case scrollPercentage > 0.5:
+            leftCircle.classList.remove("selected");
+            rightCircle.classList.add("selected");
+            break;
+        
+    }
+}

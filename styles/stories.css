@@ -111,6 +111,10 @@
     display: none;
 }
 
+.selected {
+    background-color: var(--circle-selected-color);
+}
+
 
 @media screen and (min-width: 750px) {
     .stories {

@@ -46,7 +46,23 @@ handleLanguage();
 const blob = document.querySelector(".blob");
 const blobCross = document.querySelector(".blob-cross-button")
 const blobContainer = document.querySelector(".blob-container");
-console.log(blobContainer);
+const blobInputfield = document.querySelector(".blob-input");
+const blobButtons = document.querySelectorAll(".blob-button");
+
+
+
+//Empty inputfield on button click
+blobButtons.forEach(blobButton => {
+
+    blobButton.addEventListener("click", (event) => {
+
+        event.preventDefault();
+        blobInputfield.value = "";
+
+    })
+
+
+})
 
 
 blobCross.addEventListener("click", ()=> {
@@ -69,12 +85,9 @@ window.onscroll = function(e) {
 
     if (this.scrollY > 266 + 0.56 * window.innerWidth) //Header height * hero height(scales with window width)
     {
-       blobContainer.classList.add("blobAnimation");
+       blobContainer.classList.add("blob-animation");
 
 
-    }else
-    {
-        blobContainer.classList.remove("blobAnimation");
     }
 }
 

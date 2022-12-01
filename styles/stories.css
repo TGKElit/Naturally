@@ -35,6 +35,7 @@
     height: 100%;
     background-color: #c4c4c4;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .story {
@@ -109,6 +110,10 @@
 
 .long {
     display: none;
+}
+
+.selected {
+    background-color: var(--circle-selected-color);
 }
 
 

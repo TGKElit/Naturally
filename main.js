@@ -24,7 +24,6 @@ const handleLanguage = () => {
         }
     })
 }
-
 //Does everything needed to switch language
 const switchLanguage = () => {
     if(HTML.lang === "eng"){
@@ -36,29 +35,18 @@ const switchLanguage = () => {
 }
 //////////////////////////////////////////////////////////////////
 
-//Sets visible/invisible elements based on start language
+//Set visible/invisible elements based on start language
 handleLanguage();
 
 
 
 //EVENT LISTENERS/////////////////////////////////////////////////
-//For Scroll
-window.onscroll = function(e) {
-    
-    if (this.oldScroll > this.scrollY) {
-        document.getElementById("header-section").classList.add("scroll-up");
-    } else {
-        document.getElementById("header-section").classList.remove("scroll-up");
-    }
-    this.oldScroll = this.scrollY;
-}
-
-
 
 //Blob
 const blob = document.querySelector(".blob");
 const blobCross = document.querySelector(".blob-cross-button")
-
+const blobContainer = document.querySelector(".blob-container");
+console.log(blobContainer);
 
 
 blobCross.addEventListener("click", ()=> {
@@ -68,6 +56,30 @@ blobCross.addEventListener("click", ()=> {
 
 
 })
+//For Scroll
+window.onscroll = function(e) {
+    
+    if (this.oldScroll > this.scrollY) {
+        document.getElementById("header-section").classList.add("scroll-up");
+    } else {
+        document.getElementById("header-section").classList.remove("scroll-up");
+    }
+    this.oldScroll = this.scrollY;
+
+
+    if (this.scrollY > 266 + 0.56 * window.innerWidth) //Header height * hero height(scales with window width)
+    {
+       blobContainer.classList.add("blobAnimation");
+
+
+    }else
+    {
+        blobContainer.classList.remove("blobAnimation");
+    }
+}
+
+
+
 
 
 //Language change button

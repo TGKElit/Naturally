@@ -1,6 +1,6 @@
 .header-section {
     display: flex;
-    position: sticky;
+    position: fixed;
     width: 100vw;
     max-width: 100%;
     top: -102px;
